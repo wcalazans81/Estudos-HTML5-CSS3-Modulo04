@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores Range Envio de Arquivos</title>
+    <link rel="shortcut icon" href="../imagens/logo_final3_1.ico" type="image/x-icon">
+</head>
+<body>
+    <form action="../capítulo24/cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Escolha uma Cor</legend>
+            <label for="icor">Cor:</label>
+            <input type="color" name="Cor" id="icor" value="#00ff00">
+        </fieldset>
+        <fieldset>
+            <legend>Deixe Seu Nível de Satisfação</legend>
+            <label for="inivel"> Nível de Satisfação:</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+        </fieldset>
+        <fieldset>
+            <legend>Selecione uma Foto no seu Perfil</legend>
+            <label for="ifot">Selecione Foto do Perfil:</label>
+            <input type="file" name="fot" id="ifot">
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

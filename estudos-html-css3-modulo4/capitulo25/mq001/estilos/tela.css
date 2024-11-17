@@ -1,0 +1,53 @@
+@charset "UTF8";
+
+/* Estilo para tela*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: lightgray;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+menu ul {
+    list-style-type: none; /* Retirar marcações de lista ordenadas ou lista não-ordenadas*/
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+menu li {
+    background-color: black;
+    color: white;
+    display: inline-block; /*Para alinhar blocos de textos ou imagens*/
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+article {
+    font-weight: bolder;
+    background-color:lightgray;
+    color: black;
+    width: 600px;
+    display: block; /* para criar uma caixa em tono do texto*/
+    margin: auto;  /* Para centralizar elementos do html*/
+    margin-top: 15px;
+    text-align: justify;
+    border-radius: 5px;
+
+}
+
+p {
+    padding: 10px;
+}

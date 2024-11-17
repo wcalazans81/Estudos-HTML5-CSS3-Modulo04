@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulário de login</title>
+    <link rel="shortcut icon" href="../imagens/logo_final3_1.ico" type="image/x-icon">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fomulário de login</h1>
+    <form action="cadastro.py" method="post" autocomplete="on">
+        <p>
+            <label for="iudu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="12" placeholder="Nome de Usuário" autocomplete="username"> 
+            <!-- required minlength="5" = Minimo de caracteres, maxlength="15" = Maximo de caracteres a ser digitado-->
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="8" placeholder="Minimo 8 letras" autocomplete="current-password">
+            <!-- name="sen" endereço de ligação com programa operador PHP-->
+            <!-- id="isen" endereço de ligação com programa operador Javascipt ou Python-->
+            <!-- placeholder="Minimo 8 letras"> = Comando para colocar isntruções na caixa-->
+            <!-- autocomplete="current-password" = completa senha atual, autocomplete="new-password" = nova senha-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <!-- Enviar os dados digitados na caixa-->
+            <input type="reset" value="Limpar">
+            <!-- Limpar os dados digitados na caixa-->
+        </p>
+    </form>
+</body>
+</html>

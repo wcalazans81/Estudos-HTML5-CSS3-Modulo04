@@ -1,0 +1,43 @@
+@charset "UTF8";
+
+/* Configurações pontuais  para todos os tipos de mídias*/
+
+/*
+   Typical Device Breakpoints
+  #--------------------------#
+  Ponto de interrupção típico do dispositivo
+ #------------------------------------------#
+
+ Pequenas telas: até 600px
+ Celular: de 600px até 768px
+ Tablat: 769px até 992px
+ Desktop: 993px até 1200px
+ Grandes telas: acima de 1200px
+*/
+@media print { /* impressão */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+    
+    main {
+        border: 3px solid black;
+        width: 90vw;
+    }
+    main::after {
+        content: 'Esse impressão fio feita através do site www.cursoemvideo.com';
+        text-decoration: overline; /* Decora do texto com uma linha em cima*/
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display:none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}

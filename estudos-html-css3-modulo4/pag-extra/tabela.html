@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="imagens/logo_final3_1.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+           
+            border-collapse: collapse; /* Juntar bordas*/
+        }
+        td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        .cor:hover {
+            background-color: black;
+            color: white;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            font-weight: bolder;
+            color: rgb(89, 27, 146);
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela em HTML5</h1>
+    <!--
+        HIERARQUIA DE TABALAS (SIMPLIS)
+            TABLE ROW = tabela
+                TABELA HEADER = cabeçalho de tabela
+                TABELA DARA = dado de tabela  
+    -->
+
+    <table>
+        <tr> <!-- Linha-->
+            <td>A1</td> <!-- dado-->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr  class="cor"> <!-- Linha-->
+            <td>A2</td> <!-- dado-->
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!-- Linha-->
+            <td>A3</td> <!-- dado-->
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!-- Linha-->
+            <td>A4</td> <!-- dado-->
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    <p>Exercício de configuração de <a href="tabela01.html" rel="next">Tabela 01</a></p>
+</body>
+</html>

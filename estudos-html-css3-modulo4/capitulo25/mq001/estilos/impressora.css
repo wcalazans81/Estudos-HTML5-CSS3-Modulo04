@@ -1,0 +1,27 @@
+@charset "UTF8";
+
+/* Estilo para impressora*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+menu {
+    display: none; /* Sumir com o menu da impressão no papel*/
+}
+
+article {
+    width: 100%; /* Para impressão ocupar todo o papel*/
+}
+
+article::after {
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+    /* Para colocar declarações no final de página impressa*/
+}

@@ -1,0 +1,27 @@
+@charset "UTF8";
+
+/* Configurações pontuais  para todos os tipos de mídias*/
+
+/*
+   Typical Device Breakpoints
+  #--------------------------#
+  Ponto de interrupção típico do dispositivo
+ #------------------------------------------#
+
+ Pequenas telas: até 600px
+ Celular: de 600px até 768px
+ Tablat: 769px até 992px
+ Desktop: 993px até 1200px
+ Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 1200px) { /* GRANDES TELAS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone { display: none; }
+    img#tablet { display:none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
+}

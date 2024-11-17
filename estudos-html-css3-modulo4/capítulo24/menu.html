@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exempos de Menus</title>
+    <link rel="shortcut icon" href="../imagens/logo_final3_1.ico" type="image/x-icon">
+</head>
+<body>
+    <form action="../capítulo24/cadastro.php" method="post" autocomplete="on">
+        <p>
+          <label for="iest">Escolha Estado</label>
+          <select name="est" id="iest">
+            <option value="" selected>--- Escolha</option>
+            <optgroup label="Região Norte">
+                <option value="AC">Acre</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="PR">Pará</option>
+                <option value="RO"> Rondônia</option>
+                <option value="RR"> Roraima</option>
+                <option value="TC">Tocantins</option>
+            </optgroup>
+            <optgroup label="Região Nordeste">
+                <option value="AL"> Alagoas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE"> Ceará</option>
+                <option value="MA">Maranhão</option>
+                <option value="PB"> Paraíba</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="SE">Sergipe</option>
+            </optgroup>
+            <optgroup label="Região Centro-Oeste">
+                <option value="DF">Distrito Federal</option>
+                <option value="GO"> Goiás</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+            </optgroup>
+            <optgroup label="Região Sudeste">
+                <option value="ES">Espírito Santo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+            
+            <optgroup label="Região Sul">
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+            </optgroup>
+          </select> 
+          <p><label for="imsg">Deixe sua Opinião ou Sugestão para <br> o nosso Site é muito importamte para nós</label><br><textarea name="msg" id="imsg" cols="35" rows="10"></textarea></p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="liprof">
+            <datalist id="liprof">
+                <option>Adiministrador</option>
+                <option>Motorista</option>
+                <option>Asistente do Lar</option>
+                <option>Médico</option>
+                <option>Eletrecista</option>
+                <option>Desenvolvedor</option>
+                <option>Manutênção</option>
+                <option>Pedreiro</option>
+            </datalist>
+        </p> 
+        <label for="imenu">Escolha Modelos</label>
+        <select name="menu" id="imenu">
+            <option value="" selected>Menu</option>
+            <optgroup label="Modelos Para casa">
+                <option>Escritório</option>
+                <option>Cosinha</option>
+                <option><a href="https://www.thingiverse.com/search?q=banheiro&page=1" target="_blank" rel="external">Banheiro</a></option>
+            </optgroup>
+        </select>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <a href="https://www.thingiverse.com/search?q=banheiro&page=1" target="_blank" rel="external">Banheiro</a>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@charset "UTF8";
+
+/* Configurações pontuais  para todos os tipos de mídias*/
+
+/*
+   Typical Device Breakpoints
+  #--------------------------#
+  Ponto de interrupção típico do dispositivo
+ #------------------------------------------#
+
+ Pequenas telas: até 600px
+ Celular: de 600px até 768px
+ Tablat: 769px até 992px
+ Desktop: 993px até 1200px
+ Grandes telas: acima de 1200px
+*/
+
+@media print { /* impressão */
+
+}
+
+@media  screen and (min-width: 768px) { /* TABLET
+    span#burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+
+}
+
+@media screen and (min-width: 1200px) { /* GRANDES TELAS */
+
+}
